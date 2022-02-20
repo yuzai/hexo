@@ -3,7 +3,7 @@ title: 跨域的解决方案（一）：jsonp及其实现
 date: 2017-01-31 13:32:26
 tags:
 - javascript
-categories: 总结
+categories: 学习笔记
 ---
 最近遇到了跨域问题，有很多种解决方案，本文主要对其中的jsonp进行演示，本文使用node编写服务器端代码进行测试。
 <!--more-->

@@ -4,7 +4,7 @@ date: 2016-11-15 21:27:26
 tags:
 - javascript
 - es6
-categories: 总结
+categories: 学习笔记
 ---
 es6的学习笔记
 <!--more-->

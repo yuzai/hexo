@@ -5,7 +5,7 @@ tags:
 - hexo主题制作
 - 进度
 - 问题
-categories: 创作
+categories: 原创
 ---
 
 记录我当前的进展以及需要解决的问题

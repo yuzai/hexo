@@ -2,7 +2,7 @@
 title: hexo主题制作（1）：关于hexo的一点疑问
 date: 2016-09-28 09:06:04
 tags: hexo主题制作
-categories: 创作
+categories: 原创
 ---
 hexo变量的作用域
 问题：page变量在archive.ejs和post.ejs中的含义不同，不好在post页面访问整个博客的所有文章列表

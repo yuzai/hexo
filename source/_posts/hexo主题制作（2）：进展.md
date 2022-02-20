@@ -2,7 +2,7 @@
 title: hexo主题制作（2）：进展
 date: 2016-09-28 16:25:36
 tags: hexo主题制作
-categories: 创作
+categories: 原创
 ---
 对目前的完成情况进行记录
 <!--more-->

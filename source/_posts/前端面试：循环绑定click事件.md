@@ -4,7 +4,7 @@ date: 2016-10-15 21:27:26
 tags:
 - javascript
 - 前端面试题
-categories: 总结
+categories: 学习笔记
 ---
 总结了一道昨天面试明略数据前端的一道js面试题。
 <!--more-->

@@ -3,7 +3,7 @@ title: es6实用技巧
 date: 2017-01-30 23:04:43
 tags:
 - es6
-categories: 总结
+categories: 学习笔记
 ---
 
 一些实际使用中经常会碰到的es6的语法,慢慢更新.

@@ -5,7 +5,7 @@ tags:
 - hexo主题制作
 - javascript
 - css
-categories: 创作
+categories: 原创
 ---
 
 记录我在hexo制作主题时学到的知识点

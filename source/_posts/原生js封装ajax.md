@@ -3,7 +3,7 @@ title: 原生javascript封装ajax
 date: 2017-01-24 22:12:26
 tags:
 - javascript
-categories: 创作
+categories: 原创
 ---
 最近重新看《javascript高级程序设计》，突然看到了ajax，想起来之前学习的各种坑，又想着结合最近学习的模块化编程、面向对象式编程，所以用原生的js采用面向对象的设计思路对ajax进行了一个封装，同时，想起之前学习ajax的最大困难：没有服务器端代码，不好测试，所以这次用原生node写了一个简单的服务器，用于处理ajax的测试。
 <!--more-->

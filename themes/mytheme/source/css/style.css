@@ -1,4 +1,7 @@
 body { padding-top: 70px; }
+p {
+  margin: 1.4em 0;
+}
 .canvas{
   position:absolute;
   z-index:-1;
@@ -59,7 +62,8 @@ body { padding-top: 70px; }
 	width:200px;
   height:200px;
 	margin:1% auto;
-	background:url(../rs/m1.jpg) -200px -10px no-repeat;
+	background-image: url(../rs/m2.jpg);
+  background-size: 100% 100%;
 }
 #aboutme{
   list-style-type: none;
@@ -97,9 +101,6 @@ body { padding-top: 70px; }
   background-color: #428bca;
   border-color: #357ebd;
   opacity: 1;
-}
-p{
-  margin:0px;
 }
 .myfoot p{
   text-align: center;
