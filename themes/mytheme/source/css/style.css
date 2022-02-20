@@ -140,9 +140,6 @@ header{
 header:hover{
   opacity: 1;
 }
-.main{
-  font-family: DFKai-SB;
-}
 #ab_ca{
   overflow:auto;
   height:80%;
