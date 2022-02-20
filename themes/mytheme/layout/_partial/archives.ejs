@@ -1,0 +1,78 @@
+<div class = 'container-fluid'>
+  <div class = 'row'>
+  <div class = 'col-xs-12 col-xs-offset-0 col-md-5 col-md-offset-2 col-sm-5 col-sm-offset-2 col-lg-5 col-lg-offset-2 category_col'>
+    <div class = 'well'>
+    <div class="archive">
+      <div style = 'text-align:right'>
+        <button type="button" class="btn btn-primary" id='but1'>目录视图</button>
+        <button type="button" class="btn btn-success" id='but2'>摘要视图</button>
+        <hr>
+
+      </div>
+      <% if(is_category()) {%>
+      <h3>类别：<%= page.category %></h3>
+      <% } %>
+      <% if(is_tag()) {%>
+      <h3>tags：<%= page.tag %></h3>
+      <% } %>
+      <div id = archive1>
+      <% var lastyear; %>
+      <% page.posts && page.posts.each(function(post,index){ %>
+        <% var year = post.date.year() %>
+        <% if(lastyear !== year){ %>
+        <%  if(index != 0){ %>
+          <hr>
+        <% } %>
+          <h2 class="year"><%= year %></h2 >
+          <% lastyear = year %>
+        <% } %>
+        <div class="archive_item">
+          <div class = 'row'>
+            <div class = 'col-lg-8 col-sm-8 col-md-8 col-xs-8' style='white-space:nowrap;overflow:hidden;text-overflow:ellipsis;'>
+          <a class="title" href="<%- url_for(post.path) %>" title = '<%= post.title %>'><%= post.title %></a>
+        </div>
+        <div class = 'col-lg-4 col-sm-4 col-md-4 col-xs-4' style="font-family: Menlo">
+          <span class="date"><i class='icon-calendar'></i> <%= post.date.format('YYYY-MM-DD') %></span>
+            </div>
+          </div>
+        </div>
+      <% }) %>
+    </div>
+    <div id='archive2' style = 'display:none'>
+      <% page.posts && page.posts.each(function(post){ %>
+        <% if(!post.link){ %>
+          <h4 class="post-title">
+            <i class='icon-book'> </i>
+            <a href="<%- url_for(post.path) %>"><%= /^\s*$/.test(post.title) ? ' ' : post.title %></a>
+          </h4>
+          <% }else{ %>
+            <h4 class="post-title">
+              <i class='icon-book'> </i>
+              <a href="<%- post.link %>" target="blank"><%= post.link.split('://')[1].replace(/\/\S*/, '') %></a>
+            </h4>
+        <% } %>
+      <h6 class="date"><i class='icon-calendar'> </i><%= post.date.format('YYYY-MM-DD') %></h6>
+      <div style='clear:both'></div> 	
+      <section class="md post-content">
+          <% if(!/^\s*$/.test(post.excerpt)){ %>
+              <%- post.excerpt %>
+          <% }else{ %>
+              <%- post.content %>
+          <% } %>
+      </section>
+      <% if(!/^\s*$/.test(post.excerpt)){ %>
+          <div style = 'text-align:right'>
+          <a href="<%- url_for(post.path) %>" class="more btn-lg"><%= theme.excerpt_link %></a>
+        </div>
+      <% } %>
+      <hr>
+      <% }) %>
+    </div>
+    </div>
+  </div>
+  </div>
+  <div class = 'col-xs-12 col-xs-offset-0 col-md-3 col-md-offset-0 col-sm-4 col-sm-offset-0 col-lg-3 col-lg-offset-0'>
+    <%- partial('_partial/sider') %>
+</div>
+  </div>
+</div>

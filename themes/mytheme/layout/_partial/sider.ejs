@@ -1,0 +1,22 @@
+<div style='overflow:scroll' id='bfc'>
+<div class = 'well' id = 'ab_ca'>
+<% if(!is_post()){ %>
+<%- partial('_partial/category') %>
+<%- partial('_partial/aboutme') %>
+<%- partial('_partial/tags') %>
+<% } %>
+<% if(is_post()){ %>
+<h4><%- post.title %></h4>
+<%- toc(post.content,{list_number:false}) %>
+<h4>归档</h4>
+<%- list_archives() %>
+<h4>最新文章</h4>
+<%- list_posts() %>
+<%- partial('_partial/category') %>
+<%- partial('_partial/aboutme') %>
+<%- partial('_partial/tags') %>
+<% } %>
+
+
+</div>
+</div>

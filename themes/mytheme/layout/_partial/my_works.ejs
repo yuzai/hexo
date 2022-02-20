@@ -1,0 +1,25 @@
+  <div class="container_fluid">
+  <% theme.my_works = theme.my_works.reverse() %>
+  <% for(var i in theme.my_works) {%>
+    <div class="row" style="margin:10px;margin-bottom:50px;">
+
+    <div style="padding:15px 15px;border:1px solid #d0d0d0;box-shadow:5px 5px 6px #aaaaaa;" class="col col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xs-offset-0 col-sm-offset-0 col-md-offset-2 col-lg-offset-2">
+     <div class="mywork-title">
+       <h3 style="display:inline-block;color:#bb5e00;"><%= theme.my_works[i].wtitle %></h3>
+       <span style="float:right;font-size:18px;padding-top:2.5%;"><%= date(theme.my_works[i].date,'YYYY/MM/DD') %></span>
+    </div>
+
+    <div class="work-figure">
+      <img src=<%= theme.my_works[i].img %> class="img_pc" >
+      <img src=<%= theme.my_works[i].img_mobile %> class = 'img_mobile'>
+    </div>
+
+      <h4 style="font-weight:bold;"><%= theme.my_works[i].subtitle %></h4>
+      <p><%= theme.my_works[i].contents %></p>
+      <div style = 'text-align:right'>
+      <a href="<%= theme.my_works[i].path %>" target="_blank" class="btn btn-warning" role="button">Open it</a>
+    </div>
+  </div>
+</div>
+<% } %>
+</div>

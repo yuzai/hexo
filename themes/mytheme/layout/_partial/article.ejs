@@ -1,0 +1,44 @@
+    <article>
+      <div class = 'container-fluid'>
+      <div class = 'row'>
+        <div class = 'col-xs-12 col-xs-offset-0 col-md-7 col-md-offset-1 col-sm-7 col-sm-offset-1 col-lg-7 col-lg-offset-1 category_col'>
+          <div class ='well'>
+        <h1 class='post-title'>
+            <span><%= post.title %></span>
+        </h1>
+        <%- list_tags(post.tags, {
+            show_count: false,
+            class: 'article-tag'
+        }) %>
+        <section class='post-content'>
+            <%- post.content %>
+        </section>
+        <hr>
+        <% if(typeof(post.next) != "undefined") {%>
+          <p>上一篇：<a  href = "<%- url_for(post.next.path) %>"><%- post.next.title %></a></p>
+        <% } else {%>
+          <p>上一篇：<a onclick = 'return false'>没有了</a></p>
+        <% } %>
+        <% if(typeof(post.prev) != "undefined") {%>
+          <p>下一篇：<a  href = <%- url_for(post.prev.path) %>><%- post.prev.title %></a></p>
+        <% } else {%>
+          <p>下一篇：<a onclick = 'return false'>没有了</a></p>
+        <% } %>
+        <% if(post.comments){ %>
+            <section id="comments">
+            <% if (config.duoshuo_shortname){ %>
+                    <%- partial('_partial/duoshuo') %>
+                <% }else if(config.disqus_shortname){ %>
+                    <%- partial('_partial/disqus') %>
+                <% } %>
+            </section>
+        <% } %>
+          </div>
+       </div>
+       <div class = 'col-xs-12 col-xs-offset-0 col-md-3 col-md-offset-0 col-sm-3 col-sm-offset-0 col-lg-3 col-lg-offset-0'>
+         <%- partial('_partial/sider') %>
+      </div>
+      </div>
+
+      </div>
+    </article>
