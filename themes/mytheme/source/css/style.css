@@ -2,6 +2,13 @@ body { padding-top: 70px; }
 p {
   margin: 1.4em 0;
 }
+p > img {
+  display: block;
+  margin: 0 auto;
+}
+ol, ul {
+  padding-left: 20px;
+}
 .canvas{
   position:absolute;
   z-index:-1;

@@ -12,38 +12,6 @@ excerpt_link: 详细
 
 
 my_works:
-  - work1:
-    wtitle: my_resume
-    date: 2016-09-20
-    img:  /rs/w1.jpg
-    img_mobile:  /rs/w1_2.jpg
-    path: http://yuzai.github.io/myhomepage
-    subtitle: 个人主页
-    contents: 这个是我的第一个作品，内容还没来得及修改，只是做好了外观，加强了jquery,css,html的熟练度
-  - work2:
-    wtitle: star
-    date: 2016-09-26
-    img: /rs/w2.jpg
-    img_mobile:  /rs/w2_2.jpg
-    path: http://yuzai.github.io/moon_meteor
-    subtitle: 中秋月和流星
-    contents: 在掘金上看到ycwalker的作品，中秋月亮和流星，参考了一下，他原来的工作是用ES6实现的，我现在还不太熟，用了对象，没有建立类和方法，比较低端一点，但是程序好懂一点
-  - work3:
-    wtitle: weather_app
-    date: 2016-10-15
-    img:  /rs/w3.jpg
-    img_mobile:  /rs/w3_2.jpg
-    path: http://yuzai.github.io/weather
-    subtitle: 天气app，可以增加城市，数据来自聚合，有使用次数限制。尴尬
-    contents: 这个天气主要用到了js，让我也是明白，自己的js水平太低了。在这个项目中主要学到了github联合开发，js作用域以及使用了swipe开源库，同时也增加了自己的双滑动的效果，这个项目主要针对的是手机端，手机端具有增加城市的功能，pc端没有
-  - work4:
-    wtitle: chat-robot
-    date: 2016-11-10
-    img:  /rs/w4.jpg
-    img_mobile:  /rs/w4_2.jpg
-    path: http://yuzai.github.io/chat_with_robot/
-    subtitle: 聊天机器人，机器人的回复来自聚合，没有使用次数限制
-    contents: 这个是有点无聊了，想巩固下ajax通信的技术，做了一个通信的，界面模仿微信，手机端和pc端做了适配，闲的没事就聊天哈哈。不过css实在学的有点烂，有待加强。
   - work5:
     wtitle: 打地鼠
     date: 2016-12-04
@@ -52,3 +20,35 @@ my_works:
     path: http://yuzai.github.io/whac-a-mole/
     subtitle: 打地鼠游戏，基于react-redux
     contents: 学了老半天es6,react,redux。不做点东西怎么行！打地鼠走起。这个项目最大的体会：万事开头难！做之前感觉好难，结果一会就搞定了，算了算，我真正写代码的时间都比在那边纠结是不是太难了的时间久！
+  - work4:
+    wtitle: chat-robot
+    date: 2016-11-10
+    img:  /rs/w4.jpg
+    img_mobile:  /rs/w4_2.jpg
+    path: http://yuzai.github.io/chat_with_robot/
+    subtitle: 聊天机器人，机器人的回复来自聚合，没有使用次数限制
+    contents: 这个是有点无聊了，想巩固下ajax通信的技术，做了一个通信的，界面模仿微信，手机端和pc端做了适配，闲的没事就聊天哈哈。不过css实在学的有点烂，有待加强。
+  - work3:
+    wtitle: weather_app
+    date: 2016-10-15
+    img:  /rs/w3.jpg
+    img_mobile:  /rs/w3_2.jpg
+    path: http://yuzai.github.io/weather
+    subtitle: 天气app，可以增加城市，数据来自聚合，有使用次数限制。尴尬
+    contents: 这个天气主要用到了js，让我也是明白，自己的js水平太低了。在这个项目中主要学到了github联合开发，js作用域以及使用了swipe开源库，同时也增加了自己的双滑动的效果，这个项目主要针对的是手机端，手机端具有增加城市的功能，pc端没有
+  - work2:
+    wtitle: star
+    date: 2016-09-26
+    img: /rs/w2.jpg
+    img_mobile:  /rs/w2_2.jpg
+    path: http://yuzai.github.io/moon_meteor
+    subtitle: 中秋月和流星
+    contents: 在掘金上看到ycwalker的作品，中秋月亮和流星，参考了一下，他原来的工作是用ES6实现的，我现在还不太熟，用了对象，没有建立类和方法，比较低端一点，但是程序好懂一点
+  - work1:
+    wtitle: my_resume
+    date: 2016-09-20
+    img:  /rs/w1.jpg
+    img_mobile:  /rs/w1_2.jpg
+    path: http://yuzai.github.io/myhomepage
+    subtitle: 个人主页
+    contents: 这个是我的第一个作品，内容还没来得及修改，只是做好了外观，加强了jquery,css,html的熟练度
