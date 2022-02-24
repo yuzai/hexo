@@ -1,5 +1,5 @@
 ---
-title: 打造轻量级WebIDE，看这一篇万字长文就够啦 
+title: 如何打造轻量级 WebIDE
 date: 2022-02-22 22:53
 categories: 原创
 ---
