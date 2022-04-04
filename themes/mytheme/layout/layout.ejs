@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="zh-cn">
 <head>
+    <%- js('js/index.js') %>
     <meta name="baidu-site-verification" content="81rzqdpRFv" />
     <meta charset="utf-8">
     <meta name="referrer" content="same-origin">
@@ -10,8 +11,8 @@
     <link rel = "Shortcut Icon" href= '/favicon.ico' >
     <title><%= config.title %></title>
     <link rel="stylesheet"
-      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css">
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+      href="/css/atom-one-dark.min.css">
+    <script src="/js/highlight.min.js"></script>
     <%- css('css/bootstrap.min') %>
     <%- css('css/font-awesome.min') %>
     <%- css('css/fontdiao') %>
@@ -25,7 +26,6 @@
 
     <%- js('js/jquery-1.12.3.min.js') %>
     <%- js('js/bootstrap.min.js') %>
-    <%- js('js/index.js') %>
     <% if(is_home()){%>
     <%- js('js/star.js') %>
     <%- js('js/moon.js') %>

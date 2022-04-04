@@ -1,4 +1,7 @@
-body { padding-top: 70px; }
+body {
+  padding-top: 70px;
+}
+
 p {
   margin: 1.4em 0;
 }
@@ -132,6 +135,7 @@ ol, ul {
   height:300px;
   background-size:100% 100%;
   background:url(/rs/p1.jpg)  0 -100px no-repeat;
+  background-image: url(/rs/p1.jpg);
   top:0;
   left:0;
   z-index:-1;
