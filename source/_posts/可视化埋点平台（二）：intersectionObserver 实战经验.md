@@ -1,5 +1,5 @@
 ---
-title: 可视化埋点平台元素曝光采集的思路—intersectionObserver的实战经验
+title: 可视化埋点（二）：intersectionObserver 实战经验
 date: 2022-07-31 17:50
 categories: 原创
 ---
