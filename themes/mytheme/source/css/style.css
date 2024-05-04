@@ -259,14 +259,14 @@ width: 100%
 .post-content p{
 	overflow: auto;
 }
-/*.post-content img{
+.post-content img{
 	max-width: 2000px;
 }
 @media screen and (max-width:768px){
 	.post-content img{
 	max-width:400px;
 	}
-}*/
+}
 .category_col{
 	padding:0;
 }
